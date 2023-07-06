@@ -4,6 +4,7 @@ import FancyDivider from './FancyDivider';
 import Breadcrumb from '../commons/Breadcrumb';
 
 import styles from './styles.module.css'
+import Cart from '../commons/Cart';
 
 export default function Home(){
     const breadcurmbItems = {
@@ -12,6 +13,8 @@ export default function Home(){
 
     return (
         <main>
+            <Cart />
+
             <Breadcrumb items={breadcurmbItems} />
 
             <Header />

@@ -5,6 +5,8 @@ import DetailItem from './DetailItem';
 import Loader from '../commons/Loader';
 
 import styles from './styles.module.css'
+import Cart from '../commons/Cart';
+import PageNotFound from '../commons/PageNotFound';
 
 export default function DetailPage(){
     const { id = '' } = useParams();
@@ -18,6 +20,8 @@ export default function DetailPage(){
 
     return (
         <main>
+            <Cart />
+
             <div className={styles.top_placeholder}>
                 <Breadcrumb items={breadcurmbItems} />
             </div>
@@ -28,7 +32,16 @@ export default function DetailPage(){
                         <Loader />
                     </div>
                 ) : (
-                    <DetailItem data={data} />
+                    <>
+                        {data ? (
+                            <DetailItem data={data} />
+                        ) : (
+                            <PageNotFound
+                                heading={`Product Doesn't Exist`}
+                                description={`The link to the product you have navigated to doesn't exist...`}
+                            />
+                        )}
+                    </>
                 )}
             </div>
         </main>
