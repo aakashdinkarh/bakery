@@ -1,0 +1,12 @@
+.top_placeholder {
+    background-color: #f2ece3;
+    height: 160px;
+}
+
+.loader_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}

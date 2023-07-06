@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #80354c;
+    --primary-shadow: #80354c3b;
+    --secondary-shadow: #0000001a;
+}

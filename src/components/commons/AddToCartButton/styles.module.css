@@ -1,0 +1,26 @@
+.cart_button {
+    border: 1px solid var(--color-primary);
+    background-color: white;
+    width: fit-content;
+    position: relative;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        background-color: var(--color-primary);
+    }
+}
+
+.cart_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(calc(50% + 10px));
+}
+
+.cart_count {
+    margin: 0 10px;
+}

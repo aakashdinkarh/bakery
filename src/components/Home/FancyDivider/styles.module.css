@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > *:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    width: 14px;
+    height: 14px;
+}
